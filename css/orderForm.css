@@ -1,0 +1,56 @@
+#orderForm, form {
+display: inline-block;
+font-family: calibri, arial;
+/* justify-items: center; */
+/* align-items: center; */
+/* align-content: center; */
+margin: 3px 3px;
+}
+.orderList, input[type="date"], input[type=text], input[list], select, textarea {
+    font-family: calibri, Arial;
+    font-size: 12pt;
+    width: 100%;
+    padding: 1.5% 1%;
+    margin: 1% 0;
+    display: inline-block;
+    border: 1px solid rgb(23, 129, 94);
+    box-sizing: border-box;
+    border-radius: 1px;
+  }
+  textarea {
+      height: 20vw;
+  }
+
+  .required {
+    text-align: center;
+    background-color: rgb(238, 224, 203);
+  }
+
+  input[type=submit], input[type=reset] {
+    font-size: 12pt;
+    width: 100%;
+    color: white;
+    background-color: rgb(23, 129, 94);
+    padding: 4% 4%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  input[type=submit]:hover, input[type=reset]:hover {
+    opacity: 0.7;
+  }
+
+input[type=submit]:active, input[type=reset]:active {
+    background-color: rgb(13, 119, 84);
+    box-shadow: 2px 2px black;
+    transform: translateY(3px);
+}
+
+.alert {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 150%;
+  }
