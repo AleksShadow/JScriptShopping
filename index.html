@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksandr Tselikovskii">
+    <meta name="email" content="tsel0003@algonquinlive.com">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/orderForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src='scripts/main.js' defer></script>
+    <script src='scripts/validate.js' defer></script>
+    <script src='scripts/events.js' defer></script>
+    <script type="application/json" src="data.json"></script>
+    <title>Sweet Dreams Ottawa</title>
+</head>
+
+<body>
+    <main>
+      <img class='rfloat' src='images/logo.png' alt='logo'>
+      <h1>Sweet Dreams Ottawa</h1>
+      <h2>"Life is short. Eat dessert first." - Jacques Torres</h2>
+        <p>Welcome to the famous online candy store which can make your life sweeter.
+          Here you can order a lot of kinds of candies, chocolates, biscuits and cookies.</p>
+
+        <h3>To make an order, please choose amount of items and fill the form below:</h3>
+          <div id='main_section'>
+
+          <form name='orderForm' id='orderForm' method='get'>
+            <fieldset>
+              <legend>Customer info</legend>
+
+              <input readonly class='required' type="text" name="orderTotal" value="Required fields are highlighted"><br>
+
+                <label for="clientFname">
+                  <span>First Name </span></label>
+                </label><br>
+                <input class="required" title="Required" type="text" id="clientFname" name="clientFname" value=""><br>
+                <span id="fNameError" class="alert"></span><br>
+
+                <label for="clientLname">
+                  <span>Last Name </span></label>
+                </label><br>
+                <input class="required" title="Required" type="text" id="clientLname" name="clientLname" value=""><br>
+                <span id="lNameError" class="alert"></span><br>
+
+                <label for="phoneNumber">
+                  <span>Phone number</span></label>
+                <input class="required" title="Required" type="text" id="phoneNumber" name="phoneNumber" value=""><br>
+                <span class="alert" id="phoneNumberError"></span><br>
+
+                <label for="clientEmail">
+                  <span>Email</span></label>
+                <input class="required" title="Required" type="text" id="clientEmail" name="clientEmail" value=""><br>
+                <span class="alert" id="clientEmailError"></span><br>
+
+                <label for="province">
+                  <span>Province</span></label>
+                <select id="province" title="Required" class='required' name="province">
+                <option value="">Select Province</option>
+                <option value="AB" disabled>Alberta</option>
+                <option value="BC" disabled>British Columbia</option>
+                <option value="MB" disabled>Manitoba</option>
+                <option value="NB" disabled>New Brunswick</option>
+                <option value="NL" disabled>Newfoundland and Labrador</option>
+                <option value="NS" disabled>Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE" disabled>Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK" disabled>Saskatchewan</option>
+                <option value="NT" disabled>Northwest Territories</option>
+                <option value="NU" disabled>Nunavut</option>
+                <option value="YT" disabled>Yukon</option>
+              </select><br>
+              <span class="alert" id="provinceError"></span><br>
+
+
+                <label for="cities">
+                  <span>City</span></label>
+                <input id="cities" title="Required" class="required" list="city" name="cities"><br>
+                <datalist id="city">
+                  <option value="Ottawa">
+                  <option value="Kemptville">
+                  <option value="Winchester">
+                  <option value="Embrun">
+                  <option value="Gatineau">
+                </datalist>
+                <span class="alert" id="cityError"></span><br>
+
+                <label for="address1">Address 1</label><br>
+                <input class="required" title="Required" type="text" id="address1" name="address1"><br>
+                <span class="alert" id="address1Error"></span><br>
+
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" name="address2"><br>
+                <span class="alert" id="address2Error"></span>
+                <span class="alert" id="countryError"></span><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Order</legend>
+            <fieldset class="required" title="Required">
+            <legend>Delivery</legend>
+                  <input type="radio" name="delivery" value="In-store Pick Up">In-store Pick Up<br>
+                  <input type="radio" name="delivery" value="Сurbside Pick Up">Сurbside Pick Up<br>
+                  <input type="radio" name="delivery" value="Ship to home">Ship to home<br>
+                  <span id="deliveryError" class="alert"></span><br>
+            </fieldset><br>
+
+            <label for="date">Delivery / Pick Up Date:</label>
+            <input type="date" class='required' id="deliveryDate" name="deliveryDate"><br>
+            <span class="alert" id="deliveryDateError"></span><br>
+
+                <label for="message">Comment (apx. 200 words)</label><br>
+                <textarea id='comment' name="message"></textarea>
+                <span class="alert" id="commentError"></span><br>
+
+                <label for="orderTotal">
+                  <span>Total (CAD):</span></label><br>
+                    <input readonly type="text" id="orderTotal" name="orderTotal" value=""><br>
+                    <input type="submit" id='submitButton' value="Send"><br>
+                    <input type="reset" id='resetButton'>
+            </fieldset>
+        </form>
+
+             <div class='grid'>
+               <header class='title'>
+               </header>
+
+               <div>Item</div>
+               <div>Value</div>
+               <div>Amount</div>
+               <div>Subtotal</div>
+             </div>
+              <div></div>
+
+              <div class='orderList'>
+                <ul id='userInfo'></ul>
+                <ol id='orderedProducts'></ol>
+              </div>
+
+           </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "product" : "Chocolates",
+  "type" : "Milk",
+  "items" : [
+{
+  "name": "Lindt Swiss Classic Milk Chocolate",
+  "weight": "100 g",
+  "price": 1.99,
+  "photoGallery": [
+    "./images/LindtSwissClassic.png"
+  ]
+}, {
+  "name": "Nestle Quality Street Imported Caramels",
+  "weight": "725 g",
+  "price": 14.99,
+  "photoGallery": [
+    "./images/NestleQualityStreet.png"
+  ]
+}, {
+  "name": "Ferrero Rocher Fine Hazelnut Chocolates Gift Box",
+  "weight": "600 g",
+  "price": 19.99,
+  "photoGallery": [
+    "./images/FerreroRocherFineHazelnut.png"
+  ]
+}, {
+  "name": "Cadbury Festive Milk Tray Gift Box Chocolate",
+  "weight": "60 g",
+  "price": 12.99,
+  "photoGallery": [
+    "./images/CadburyFestiveMilkGift.png"
+  ]
+}, {
+  "name": "Terry's Orange Flavoured Milk Chocolatey",
+  "weight": "90 g",
+  "price": 2.78,
+  "photoGallery": [
+    "./images/TerrysOrangeFlavouredMilk.png"
+  ]
+}, {
+  "name": "NESTLÉ TURTLES Holiday",
+  "weight": "144 g",
+  "price": 4.99,
+  "photoGallery": [
+    "./images/NestleTurtlesHoliday.png"
+  ]
+}, {
+  "name": "OREO Mint Chocolate Fudge Covered Cookies",
+  "weight": "280g",
+  "price": 2.99,
+  "photoGallery": [
+    "./images/OREOMintChocFudge.png"
+  ]
+}, {
+  "name": "Kinder Chocolate Single Bars",
+  "weight": "21 g",
+  "price": 0.88,
+  "photoGallery": [
+    "./images/KinderChocolateSingle.png"
+  ]
+}, {
+  "name": "Lindt Lindor Dulce De Leche Milk Chocolate Truffles",
+  "weight": "150 g",
+  "price": 8.79,
+  "photoGallery": [
+    "./images/LindtDulceTruffles.png"
+  ]
+}
+]
+}
