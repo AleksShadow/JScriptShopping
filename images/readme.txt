@@ -1,0 +1,1 @@
+Images of store items
